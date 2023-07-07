@@ -1,0 +1,20 @@
+{
+    "name": "u0_a495/phpmvcframework",
+    "autoload": {
+        "psr-4": {
+            "U0A495\\Phpmvcframework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jmr13",
+            "email": "Gamayanjomar@yahoo.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "app\\": "./"
+      }
+    },
+    "require": {}
+}
