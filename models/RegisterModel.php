@@ -3,7 +3,7 @@
 
   use app\core\Model;
 
-  class RegisterModel extends Model {
+  class RegisterModel extends DbModel {
     public string $firstname = '';
     public string $lastname = '';
     public string $email = '';
@@ -12,6 +12,7 @@
     
     public function register() {
       echo 'Creating new user';
+      // 3:04:44
     }
     
     public function rules(): array {
