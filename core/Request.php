@@ -9,12 +9,6 @@
         return $path;
       } 
       return substr($path, 0, $position);
-      /*
-      echo '<pre>';
-      var_dump($position);
-      echo '</pre>';
-      exit;
-      */
     }
     public function method() {
       return strtolower($_SERVER['REQUEST_METHOD']);
