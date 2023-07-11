@@ -4,7 +4,7 @@
   use app\core\Model;
   use app\core\DbModel;
 
-  class User extends DbModel {
+  class User extends UserModel {
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 1;
     const STATUS_DELETED = 2;
@@ -18,6 +18,10 @@
     
     public function tableName(): string {
       return 'users';
+    }
+    
+    public function primarykey(): string {
+      return 'id';
     }
     
     public function save() {
@@ -50,6 +54,10 @@
         'password' => 'Password',
         'confirmPassword' => 'Confirm Password'
       ];
+    }
+    
+    public function getDisplayName(): string {
+      return $this->firstname . ' ' . $this->lastname;
     }
   }
 ?>

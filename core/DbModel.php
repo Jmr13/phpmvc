@@ -7,6 +7,7 @@
   abstract class DbModel extends Model {
     abstract public function tableName(): string;
     abstract public function attributes(): array;
+    abstract public function primarykey(): string;
     
     public function save() {
       $tableName = $this->tableName();
